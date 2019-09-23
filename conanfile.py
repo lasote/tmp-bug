@@ -13,7 +13,7 @@ class LibConan(ConanFile):
     options = {"shared": [True, False]}
     default_options = "shared=False"
     generators = "cmake"
-    requires = "boost/1.69.0@conan/stable"
+    requires = "boost/1.69.0@conan/stable", "OpenSSL/1.1.1c@conan/stable", "Poco/1.9.4@pocoproject/stable", "rapidjson/1.1.0@bincrafters/stable"
 
     def source(self):
         self.run("git clone https://github.com/conan-io/hello.git")
