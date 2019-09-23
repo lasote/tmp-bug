@@ -41,3 +41,7 @@ install:
 script:
   - chmod +x .travis/run.sh
   - ./.travis/run.sh
+
+after_failure:
+  - cat /tmp/kk.log
+
